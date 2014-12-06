@@ -16,9 +16,9 @@ TODO: スライドの説明
 
 === インストール
 
-  gem install rabbit-slide-kenhys-tokyodebian-groonga-20141220
+  gem install rabbit-slide-kenhys-tokyodebian-groonga-201412
 
 === 表示
 
-  rabbit rabbit-slide-kenhys-tokyodebian-groonga-20141220.gem
+  rabbit rabbit-slide-kenhys-tokyodebian-groonga-201412.gem
 
