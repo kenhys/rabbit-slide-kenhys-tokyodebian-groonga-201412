@@ -269,14 +269,23 @@
 = Cutterとは
 
   * 書きやすさを重視したC/C++向けテスティングフレームワークのひとつ。
-  * Debianではapt-get install -y cutter-testing-frameworkでまるっとインストールできる
+  * Debianでは簡単にインストール
+
+      % apt-get install -y cutter-testing-framework
 
     * ただし、バージョンがやや古い
 
 = Fedoraへ新規パッケージを投入するまで
 
-  Fedoraプロジェクトで新規パッケージをリリースする方法
-  http://www.clear-code.com/blog/2013/4/10.html
 
-  Fedoraプロジェクトでパッケージを更新するには
-  http://www.clear-code.com/blog/2013/7/17.html
+= 新規パッケージについてまとめ
+
+  * Fedoraプロジェクトで\n新規パッケージをリリースする方法
+
+    (('note: http://www.clear-code.com/blog/2013/4/10.html'))
+
+= パッケージの更新方法まとめ
+
+  * Fedoraプロジェクトで\nパッケージを更新するには
+
+    (('note: http://www.clear-code.com/blog/2013/7/17.html'))
