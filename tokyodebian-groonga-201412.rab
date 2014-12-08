@@ -235,6 +235,7 @@
 
 = 祝Debian入り
 
+  * 2014/10/21
   * 経緯をざっくりまとめ
 
     * Debianでパッケージを\nリリースできるようにしたい\n - そしてDebianへ
@@ -243,15 +244,22 @@
 
 = Cowbuilderについてまとめ
 
-  * Ubuntuでdebパッケージのお手軽クリーンルーム（chroot）ビルド環境を構築するには
+  * Ubuntuでdebパッケージの\nお手軽クリーンルーム\nビルド環境を構築するには
 
     (('note: http://www.clear-code.com/blog/2014/11/21.html'))
 
 = Piupartsについてまとめ
 
-  * Ubuntuでdebパッケージのテストをするには
+  * Ubuntuでdebパッケージの\nテストをするには
 
     (('note: http://www.clear-code.com/blog/2014/12/1.html'))
+
+= まとめ
+
+  * debian/copyrightは入念にチェックを
+    * licensecheck -rおすすめ
+  * New Queueに入ってからが勝負
+  * ftp-master待ちの間にlintian強化(('&#x279C;'))rejectのコンボでも泣かない
 
 = Cutterとは
 
