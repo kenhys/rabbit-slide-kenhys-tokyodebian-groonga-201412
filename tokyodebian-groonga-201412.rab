@@ -54,18 +54,17 @@
 
     (('note: 他にもNrooongaとかHaroongaとかいろいろあるよ！'))
 
-= Groonga族
+= Groonga族って
 
-  * Groonga
-  * Mroonga(むるんが)
+  * Mroonga
 
     * Groongaをストレージエンジンとして使う
 
-  * Rroonga(るるんが)
+  * Rroonga
 
     * RubyからGroongaを扱える
 
-  * Droonga(どぅるんが)
+  * Droonga
 
     * ((*D*))istributed Groonga
 
