@@ -1,28 +1,275 @@
-= タイトル
+= DebianとFedoraで\nパッケージを\nリリースするまでの話
 
-# : subtitle
-#    サブタイトル
 : author
-   HAYASHI Kentaro
-# : institution
-#    所属
-# : content-source
-#    イベント名
-# : date
-#    2014/12/06
-# : allotted-time
-#    5m
-# : theme
-#    default
+  林健太郎
+: institution
+  株式会社クリアコード
+: content-source
+  東京Debian勉強会
+: date
+  2014/12/20
+: allotted-time
+  30m
+: theme
+  clear-code
 
-= 最初のスライド
+= 今日の内容
 
-  * 項目1
-  * 項目2
-  * 項目3
+  * 第一部(Debian編)
 
-= 二番目のスライド
+    * Groongaとは
+    * 新規パッケージを投入するまで
+
+  * 第二部(Fedora編)
+
+    * Cutterとは
+    * 新規パッケージを投入するまで
+
+= はじめに
+
+  * スピーカーの立ち位置
+
+    * Groonga Projectの中の人
+    * おもにリリース関連\n
+      (('note: (2012/05〜2014/03までリリースマネージャ)'))
+
+= Groongaとは
 
   # image
-  # src = https://raw.github.com/rabbit-shocker/rabbit/master/sample/lavie.png
+  # src = https://raw.githubusercontent.com/groonga/groonga/master/data/images/logo/groonga-icon-full-size.svg
   # relative_height = 100
+
+= Groongaとは
+
+  * 「ぐるんが」
+  * カラムストア機能つき全文検索エンジン
+  * Sennaの後継プロダクト
+
+= Groonga族
+
+  * Groonga
+  * Mroonga(むるんが)
+  * Rroonga(るるんが)
+  * Droonga(どぅるんが)
+
+    (('note: 他にもNrooongaとかHaroongaとかいろいろあるよ！'))
+
+= Groonga族
+
+  * Groonga
+  * Mroonga(むるんが)
+
+    * Groongaをストレージエンジンとして使う
+
+  * Rroonga(るるんが)
+
+    * RubyからGroongaを扱える
+
+  * Droonga(どぅるんが)
+
+    * ((*D*))istributed Groonga
+
+= Groongaを楽々インストール
+
+  * Debian
+  * Ubuntu
+  * CentOS
+  * Fedora
+
+= Debianでも楽々インストール
+
+  * stable
+  * (('del: testing'))
+  * (('del: unstable'))
+
+    * (('note: 以前はtestingやunstableもプロジェクト公式で対応'))
+
+= Ubuntuでも楽々インストール
+
+  * 12.04 LTS
+  * 14.04 LTS
+  * 14.10
+
+    * (('note: だいたいEOLに合わせて対応打ち切り'))
+    * (('note: PPAでパッケージを提供へと移行'))
+
+= CentOSでも楽々インストール
+
+  * CentOS 5
+  * CentOS 6
+  * CentOS 7
+
+= Fedoraでも楽々インストール
+
+  * Fedora 19
+  * Fedora 20
+  * Fedora 21
+
+    * (('note: Fedora公式でのリリースへ移行'))
+
+= パッケージのビルドは大変
+
+  * Debian
+    * (('note: 各リリース & i386/amd64'))
+  * Ubuntu
+    * (('note: 各リリース & i386/amd64'))
+  * CentOS
+    * (('note: 各リリース & i386/amd64'))
+  * Fedora
+    * (('note: 各リリース & i386/amd64'))
+
+= 準備が大変な理由
+
+  * 元々はすべてchrootでビルド
+  * Groongaのビルドって重い
+  * リリースごとに10数回のビルド
+  * ビルド専用マシンがあったことも
+  * rinseつらくなってきた
+
+= ビルド環境の移行(deb系)
+
+  * Debian
+    * chroot (('&#x279F;')) Vagrantへ移行
+    * testing,unstable対応打ち切り
+
+  * Ubuntu
+    * chroot (('&#x279F;')) PPAへ移行
+
+= ビルド環境の移行(rpm系)
+
+  * CentOS
+    * chroot (('&#x279F;')) Vagantへ移行
+  * Fedora
+    * chroot (('&#x279F;')) 公式でのリリースヘ移行
+
+= ホスティング環境の移行
+
+  * 元々他サービスと同居
+
+    ((*(('&#x2B07;'))*))
+
+  * packages.groonga.orgを外部へ
+  * ConoHa支援プログラムを利用
+
+    * https://www.conoha.jp/community
+
+= Debianへ新規パッケージを投入するまで
+
+  # image
+  # src = https://raw.githubusercontent.com/groonga/groonga/master/data/images/logo/groonga-icon-full-size.svg
+  # relative_height = 100
+
+= きっかけ
+
+  * 時は、2013年11月29日
+
+    * 全文検索エンジンGroongaを囲む夕べ4
+    * やまねさんを紹介された
+
+= まずはWNPP
+
+  * 2013/12/13 はじめてのITP
+
+    * このときのGroongaは3.0.1
+
+    (('note: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=732055'))
+
+= WNPPについてまとめた
+
+  * Debianでパッケージを\nリリースできるようにしたい - WNPPへのバグ登録
+
+    (('note: http://www.clear-code.com/blog/2014/3/7.html'))
+
+= パッケージを手直し
+
+  * 2014/01頃
+
+    * コメントをうけてパッケージを修正
+    * upstreamにもとりこんでいく
+
+= ようやくNew Queueへ
+
+  * 2014/02頃
+
+    * やまねさんにGroonga 4.0.0をNew Queueにアップロードしてもらう
+
+= Lintianについてまとめた
+
+  * Debianでパッケージを\nリリースできるようにしたい\n - よりDebianらしく
+
+    (('note: http://www.clear-code.com/blog/2014/4/3.html'))
+
+= mentors.debian.netについてまとめた
+
+  * Debianでパッケージを\nリリースできるようにしたい\n - mentors.debian.netの使いかた
+
+    (('note: http://www.clear-code.com/blog/2014/7/2.html'))
+
+= New Queueどうなった？
+
+  * 2014/05/15
+
+    * ftp-masterのチェックまで約3ヶ月
+    * debian/copyrightの不備が原因でrejectされる
+    * 審査待ちの間にLintianのチェックが強化
+
+= 再チャレンジ
+
+  * 2014/09頃
+
+    * このときGroongaは4.0.5
+
+= 再びreject
+
+  * 2014/10/10
+
+    * ftp-masterのチェックまで約1ヶ月
+    * またしてもdebian/copyrightの不備
+    * Sphinxのバンドルしているjsへの言及が漏れていた
+
+= 再々チャレンジ
+
+  * 2014/10/15頃
+
+    * このときGroongaは4.0.6
+
+= 祝Debian入り
+
+  * 経緯をざっくりまとめ
+
+    * Debianでパッケージを\nリリースできるようにしたい\n - そしてDebianへ
+
+      (('note: http://www.clear-code.com/blog/2014/10/31.html'))
+
+= Cowbuilderについてまとめ
+
+  * Ubuntuでdebパッケージのお手軽クリーンルーム（chroot）ビルド環境を構築するには
+
+    (('note: http://www.clear-code.com/blog/2014/11/21.html'))
+
+= Piupartsについてまとめ
+
+  * Ubuntuでdebパッケージのテストをするには
+
+    (('note: http://www.clear-code.com/blog/2014/12/1.html'))
+
+= Cutterとは
+
+  # image
+  # src = https://raw.githubusercontent.com/clear-code/cutter/master/data/icons/kinotan/default.png
+  # relative_height = 50
+
+= Cutterとは
+
+  * 書きやすさを重視したC/C++向けテスティングフレームワークのひとつ。
+  * Debianではapt-get install -y cutter-testing-frameworkでまるっとインストールできる
+
+    * ただし、バージョンがやや古い
+
+= Fedoraへ新規パッケージを投入するまで
+
+  Fedoraプロジェクトで新規パッケージをリリースする方法
+  http://www.clear-code.com/blog/2013/4/10.html
+
+  Fedoraプロジェクトでパッケージを更新するには
+  http://www.clear-code.com/blog/2013/7/17.html
