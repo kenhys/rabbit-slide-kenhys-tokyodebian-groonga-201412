@@ -247,13 +247,17 @@
 
     (('note: http://www.clear-code.com/blog/2014/11/21.html'))
 
+  * ディスク容量がカツカツでないならpbuilderよりcowbuilderおすすめ
+
 = Piupartsについてまとめ
 
   * Ubuntuでdebパッケージの\nテストをするには
 
     (('note: http://www.clear-code.com/blog/2014/12/1.html'))
 
-= まとめ
+  * cowbuilder & lintian & piupartsのコンボがおすすめ
+
+= Debianでの教訓
 
   * debian/copyrightは入念にチェックを
     * licensecheck -rおすすめ
@@ -275,8 +279,66 @@
 
     * ただし、バージョンがやや古い
 
-= Fedoraへ新規パッケージを投入するまで
+= Cutterを\nFedora入りさせた動機(1)
 
+  * すでにFedoraにGroongaはあった
+  * でも毎月リリースに追従していない
+  * Fedora公式でメンテしていく方向性にしたい
+
+= Cutterを\nFedora入りさせた動機(2)
+
+  * でも実績積んでないので何か新規パッケージを
+  * いわば予行演習
+
+= はじめにすること
+
+  * specとSRPMを用意
+  * BugzillaへのReview Request
+
+  * FE-NEEDSPONSORフラグを立ててスポンサーを募る
+
+= Cutterの場合
+
+  * 2012/12/17
+
+    * Review Requestを投げた
+
+      (('note: https://bugzilla.redhat.com/show_bug.cgi?id=887778'))
+
+    * Fedora 17の時代
+    * このときのCutterは1.2.2
+
+= レビューの一つの壁
+
+  * スポンサーを探すこと
+  * スポンサー権限のないレビューはunofficial扱い
+
+= スポンサーがついたら
+
+  * レビューと修正のくりかえし
+  * DebianでいうDDとのやりとり
+
+= レビューを通ったら？
+
+  * 2013/02/05
+
+    * SCMリクエストを投げる
+
+      * パッケージのリポジトリを作成してもらう
+      * 晴れてpackagerになれる
+
+= 権限
+
+  * sponsor
+
+    * 新規packagerを追加できる
+    * DebianでいうDDっぽい役割
+
+  * packager
+
+    * packagersグループの一員
+    * 担当するパッケージのコミット権
+    * アップロードまでできる
 
 = 新規パッケージについてまとめ
 
