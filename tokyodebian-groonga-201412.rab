@@ -358,26 +358,46 @@
       * パッケージのリポジトリを作成してもらう
       * 晴れてpackagerになれる
 
-= 権限
+= 権限についておさらい
 
+  * contributor
+  * packager
   * sponsor
 
-    * 新規packagerを追加できる
-    * DebianでいうDDっぽい役割
+= Contributor
 
-  * packager
+  * FASアカウントを保持
+  * Bugzillaアカウントを保持
+  * Review Requestを投げる
+  * Package Maintainer相当
 
-    * packagersグループの一員
-    * 担当するパッケージのコミット権
-    * アップロードまでできる
+= Packager
 
-= 新規パッケージについてまとめ
+  * contributorより進化
+  * packagerグループに所属
+  * 担当するパッケージのコミット
+  * パッケージのアップロードまでできる
+  * Debian Maintainer相当
+
+= Sponsor
+
+  * 新規packagerを追加できる
+  * 新人のメンターを務める
+  * 正式なレビューをする
+  * Debian Developer相当
+
+= オーナー制度
+
+  * packagerはパッケージのオーナーになれる
+  * 共同メンテナの承認
+
+= 新規パッケージまとめ
 
   * Fedoraプロジェクトで\n新規パッケージをリリースする方法
 
     (('note: http://www.clear-code.com/blog/2013/4/10.html'))
 
-= パッケージの更新方法まとめ
+= パッケージ更新方法まとめ
 
   * Fedoraプロジェクトで\nパッケージを更新するには
 
