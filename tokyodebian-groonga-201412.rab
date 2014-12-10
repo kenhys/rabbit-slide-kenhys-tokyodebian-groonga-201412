@@ -224,7 +224,7 @@
 
     (('note: http://www.clear-code.com/blog/2014/4/3.html'))
 
-= mentors.debian.netについてまとめた
+= mentors.debian.netに\nついてまとめた
 
   * Debianでパッケージを\nリリースできるようにしたい\n - mentors.debian.netの使いかた
 
@@ -377,3 +377,4 @@
   * Fedoraプロジェクトで\nパッケージを更新するには
 
     (('note: http://www.clear-code.com/blog/2013/7/17.html'))
+
