@@ -178,7 +178,7 @@
 
     * https://www.conoha.jp/community
 
-= Debianへ新規パッケージを投入するまで
+= Debianへ\n新規パッケージを\n投入するまで
 
   # image
   # src = https://raw.githubusercontent.com/groonga/groonga/master/data/images/logo/groonga-icon-full-size.svg
