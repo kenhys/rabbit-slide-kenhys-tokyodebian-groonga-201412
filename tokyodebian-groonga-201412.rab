@@ -89,7 +89,7 @@
   * CentOS
   * Fedora
 
-= Debianでも楽々インストール
+= Debianでも\n楽々インストール
 
   * stable
   * (('del: testing'))
@@ -97,7 +97,7 @@
 
     * (('note: 以前はtestingやunstableもプロジェクト公式で対応'))
 
-= Ubuntuでも楽々インストール
+= Ubuntuでも\n楽々インストール
 
   * 12.04 LTS
   * 14.04 LTS
@@ -106,13 +106,13 @@
     * (('note: だいたいEOLに合わせて対応打ち切り'))
     * (('note: PPAでパッケージを提供へと移行'))
 
-= CentOSでも楽々インストール
+= CentOSでも\n楽々インストール
 
   * CentOS 5
   * CentOS 6
   * CentOS 7
 
-= Fedoraでも楽々インストール
+= Fedoraでも\n楽々インストール
 
   * Fedora 19
   * Fedora 20
