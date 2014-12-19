@@ -165,7 +165,7 @@
 = ビルド環境の移行(rpm系)
 
   * CentOS
-    * chroot (('&#x279F;')) Vagantへ移行
+    * chroot (('&#x279F;')) Vagrantへ移行
   * Fedora
     * chroot (('&#x279F;')) 公式でのリリースヘ移行
 
