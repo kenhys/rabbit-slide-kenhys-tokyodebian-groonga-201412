@@ -169,15 +169,16 @@
   * Fedora
     * chroot (('&#x279F;')) 公式でのリリースヘ移行
 
-= ホスティング環境の移行
+= ホスティング環境の移行(1)
 
-  * 元々他サービスと同居
+  * packages.groonga.org
 
+    * Groongaのリポジトリを提供
+    * 元々他サービスと同居
     * セキュリティの観点から"みんな"で協力が難しい
 
-    ((*(('&#x2B07;'))*))
+= ホスティング環境の移行(2)
 
-  * packages.groonga.orgを外部へ
   * ConoHa支援プログラムを利用
 
     * https://www.conoha.jp/community
@@ -299,6 +300,14 @@
   * New Queueに入ってからが勝負
   * ftp-master待ちの間にlintian強化(('&#x279C;'))rejectのコンボでも泣かない
 
+= Groonga on ARM
+
+  * armhfをサポートできるように(wheezyは除く)
+  * porterbox(ipa.debian.net)を借りた
+  * Groonga on ARM
+
+    (('note:http://qiita.com/kenhys/items/e42e943ee49e5105eb4b'))
+
 = Cutterとは
 
   # image
@@ -343,6 +352,12 @@
     * Fedora 17の時代
     * このときのCutterは1.2.2
 
+= スポンサー獲得
+
+  * 2012/12/18
+
+    * なぜか速攻でスポンサーがついた
+
 = レビューの一つの壁
 
   * スポンサーを探すこと
@@ -361,6 +376,16 @@
 
       * パッケージのリポジトリを作成してもらう
       * 晴れてpackagerになれる
+
+= リリース！
+
+  * 2013/02/09
+
+    * testing送りに
+
+  * 2013/02/18
+
+    * Fedora 18でリリース
 
 = 権限についておさらい
 
@@ -477,7 +502,7 @@
 
   * ソースのアップロード
   * spec更新
-  * ブランチごとにビルド
+  * ブランチごとにビルド on Koji(麹)
   * testingに送る
 
 = パッケージが\nリリースされるまで(2)
@@ -506,10 +531,11 @@
 
 = ((*おまけ*))
 
-  * Groongaの昇華プリント用転写紙配布中
+  * 昇華プリント用転写紙配布中
 
     * アイロンプリントできます
     * オリジナルTシャツに
+    * Groonga,Mroonga,Rroonga,Droongaもあるよ
 
 = 最後に
 
