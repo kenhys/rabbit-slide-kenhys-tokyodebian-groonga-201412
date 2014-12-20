@@ -379,8 +379,10 @@
 
   * contributorより進化
   * packagerグループに所属
-  * 担当するパッケージのコミット
-  * パッケージのアップロードまでできる
+  * パッケージのオーナーになれる
+
+      * コミットできる
+      * アップロードまでできる
   * Debian Maintainer相当
 
 = Sponsor
@@ -392,8 +394,9 @@
 
 = オーナー制度
 
-  * packagerはパッケージのオーナーになれる
+  * packagerはパッケージの\nオーナーになれる
   * 共同メンテナの承認
+  * より幅広い権限をあたえられる
 
 = 新規パッケージまとめ
 
@@ -407,11 +410,25 @@
 
     (('note: http://www.clear-code.com/blog/2013/7/17.html'))
 
+= groonga-normalizer-mysqlとは
+
+  # image
+  # src = https://raw.githubusercontent.com/groonga/groonga/master/data/images/logo/groonga-icon-full-size.svg
+  # relative_height = 100
+
+= groonga-normalizer-mysqlとは
+
+  * Groongaに機能追加する\nプラグイン
+  * MySQLと同様の正規化を\n可能にする
+
 = groonga-normalizer-mysqlの場合
 
 * 2013/04/26
 
   * Review Requestを投げた
+
+    (('note: https://bugzilla.redhat.com/show_bug.cgi?id=957053'))
+
   * このときのバージョンは1.0.3
 
 = 最新に追従してRequest
@@ -434,13 +451,19 @@
 * 2013/07/28
 
   * レビュー開始
-  * 修正の嵐
+
+    * %dir修正
+    * ExclusiveArch修正
+    * etc...
+
+= レビュー承認
 
 * 2013/08/07
 
-  * レビュー承認
+  * SCMリクエスト
+  * 即日リポジトリが用意された
 
-= スポンサー見つかる
+= リリース！
 
 * 2013/08/13
 
@@ -450,6 +473,19 @@
 
   * Fedora 19でリリース
 
+= パッケージが\nリリースされるまで(1)
+
+  * ソースのアップロード
+  * spec更新
+  * ブランチごとにビルド
+  * testingに送る
+
+= パッケージが\nリリースされるまで(2)
+
+  * Karmaを集めよう
+    * Karma集ったらリリース
+    * 一定期間経過でリリース
+
 = Fedoraでの教訓
 
   * スポンサー探しが肝心
@@ -458,3 +494,24 @@
   * あの人は今がよくある
 
     (('note: 音信不通になるのよくない'))
+
+= ((*宣伝*))
+
+  * コードリーダー育成支援サービス
+
+    (('note:http://www.clear-code.com/services/code-reader/'))
+
+    * チームの全員が自然と\n((*リーダブルコード*))を書くような文化にする
+    * コードから学び合う開発チーム作りを支援する
+
+= ((*おまけ*))
+
+  * Groongaの昇華プリント用転写紙配布中
+
+    * アイロンプリントできます
+    * オリジナルTシャツに
+
+= 最後に
+
+(('tag:center')) Any Questions?
+
